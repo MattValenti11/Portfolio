@@ -1,0 +1,92 @@
+/* About.css */
+
+/* Añade un margen superior para crear separación desde el header */
+#about {
+  margin-top: 1cm; /* Espacio de 1 cm entre el header y la sección About */
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+
+.about-section, .skills-section {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about-title, .skills-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #2C3E50;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #95A5A6;
+  text-align: justify;
+}
+
+.about-text strong {
+  color: #2C3E50; /* Gris oscuro para el texto resaltado */
+}
+
+.about-link {
+  color: #F39C12; /* Amarillo mostaza para los enlaces */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-link:hover {
+  text-decoration: underline; /* Subrayar el enlace al pasar el ratón */
+}
+
+.skills-section {
+  background-color: #ECF0F1;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.skills-list li {
+  font-size: 1rem;
+  color: #2C3E50;
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 10px);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Estilos del botón de contacto */
+.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #F39C12; /* Amarillo mostaza */
+  color: #FFFFFF; /* Blanco */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px; /* Espaciado superior para separar del texto */
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #e67e22; /* Naranja más oscuro como alternativa para el hover */
+}
