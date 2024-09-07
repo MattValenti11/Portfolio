@@ -3,6 +3,7 @@ import Header from './Header'; // Importa el nuevo componente Header
 import Projects from './Projects'; // Importa el componente Projects
 import About from './About'; // Importa el componente About
 import '../styles/LandingPage.css'; // Importa los estilos de la LandingPage
+import Contact from "./Contact"
 
 const LandingPage = () => {
   return (
@@ -25,6 +26,7 @@ const LandingPage = () => {
       <About />
       <div className="landing-page-separator"></div> {/* Separador de 5 cm entre About y Projects */}
       <Projects /> {/* Asegúrate de que el componente Projects esté  */}
+      <Contact/>
     </div>
   );
 };
