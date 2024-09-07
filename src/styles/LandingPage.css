@@ -1,0 +1,103 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  padding-top: 70px; /* Ajuste para la altura del header */
+}
+
+/* LandingPage Container */
+.landing-page-container {
+  text-align: center;
+  background-color: #ffffff; /* Blanco */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main Content */
+.landing-page-main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  position: relative;
+  width: 100%;
+  flex-grow: 1;
+}
+
+/* Social Icons */
+.landing-page-social-icons {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.landing-page-icon {
+  text-decoration: none;
+  color: #95a5a6; /* Gris medio */
+  margin: 10px 0;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+/* Hover para Social Icons */
+.landing-page-icon:hover {
+  color: #f39c12; /* Amarillo mostaza */
+}
+
+/* LinkedIn Specific Style */
+/* .landing-page-linkedin {} */
+
+/* Twitter Specific Style */
+/* .landing-page-twitter {} */
+
+/* YouTube Specific Style */
+/* .landing-page-youtube {} */
+
+/* GitHub Specific Style */
+/* .landing-page-github {} */
+
+/* Medium Specific Style */
+/* .landing-page-medium {} */
+
+/* Intro Text */
+.landing-page-intro-text {
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Intro Title */
+.landing-page-intro-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #2c3e50; /* Gris oscuro */
+}
+
+/* Intro Paragraph */
+.landing-page-intro-paragraph {
+  font-size: 1.2em;
+  margin: 20px 0;
+  color: #95a5a6; /* Gris medio */
+}
+
+/* Projects Button */
+.landing-page-projects-button {
+  padding: 10px 30px;
+  background-color: #f39c12; /* Amarillo mostaza */
+  color: #ffffff; /* Blanco */
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover para Projects Button */
+.landing-page-projects-button:hover {
+  background-color: #e67e22; /* Naranja más oscuro como alternativa para el hover */
+}

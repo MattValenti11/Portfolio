@@ -1,0 +1,46 @@
+/* Estilos del header */
+.header {
+  display: flex;
+  justify-content: space-between; /* Asegura que el logo esté a la izquierda y el menú a la derecha */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  padding: 2px 15px; /* Reducido para hacer el header más pequeño verticalmente */
+  background-color: #FFFFFF; /* Fondo blanco */
+  border-bottom: 1px solid #95A5A6; /* Borde gris medio */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilos del logo */
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Estilos del texto del logo (sin cambios en el tamaño) */
+.header-logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2C3E50; /* Gris oscuro */
+}
+
+/* Estilos del menú de navegación */
+.header-nav {
+  display: flex;
+  justify-content: flex-end; /* Alinea los enlaces hacia la derecha */
+  gap: 15px; /* Espaciado entre los enlaces reducido */
+}
+
+/* Estilos para los enlaces del menú (sin cambios en el tamaño) */
+.header-nav-item {
+  font-size: 1rem;
+  color: #95A5A6; /* Gris medio */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Efecto hover en los enlaces */
+.header-nav-item:hover {
+  color: #F39C12; /* Amarillo mostaza */
+}

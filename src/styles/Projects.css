@@ -1,0 +1,40 @@
+.projects-container {
+    display: flex;
+    height: 100vh; /* Ocupa toda la altura de la ventana del navegador */
+  }
+  
+  .projects-image-container {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Centra verticalmente la imagen dentro del contenedor */
+    justify-content: center; /* Centra horizontalmente la imagen dentro del contenedor */
+  }
+  
+  .projects-image {
+    max-width: 100%; /* Limita el ancho máximo de la imagen */
+    max-height: 100%; /* Limita la altura máxima de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+  }
+  
+  .projects-text-container {
+    flex: 1;
+    padding: 40px; /* Agrega más espacio alrededor del texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    background-color: #f4f4f4; /* Agrega un color de fondo suave para que el texto resalte */
+    border-left: 1px solid #ddd; /* Agrega una línea divisoria entre la imagen y el texto */
+  }
+  
+  .projects-title {
+    font-size: 2.5rem; /* Aumenta el tamaño del título */
+    margin-bottom: 20px; /* Aumenta el margen inferior */
+    color: #333; /* Cambia el color del título */
+  }
+  
+  .projects-description {
+    font-size: 1.2rem; /* Aumenta el tamaño del texto de la descripción */
+    line-height: 1.6; /* Aumenta el espaciado entre líneas */
+    color: #555; /* Cambia el color del texto de la descripción */
+  }
+  
