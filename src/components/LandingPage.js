@@ -20,7 +20,7 @@ const LandingPage = () => {
           <a href="#projects" className="landing-page-projects-button">PROYECTOS</a>
         </div>
       </main>
-      <Projects /> {/* Asegúrate de que el componente Projects esté aquí */}
+      <Projects /> {/* Asegúrate de que el componente Projects esté  */}
     </div>
   );
 };
