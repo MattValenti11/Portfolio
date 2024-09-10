@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Merriweather', sans-serif; /* Cambia a la fuente deseada */
   padding-top: 70px; /* Ajuste para la altura del header */
 }
 
@@ -87,9 +87,9 @@ body {
   background-color: #e67e22; /* Naranja más oscuro como alternativa para el hover */
 }
 
-/* Agregar separación de 5 cm entre LandingPage y About */
+/* Agregar separación de 1.5 cm entre LandingPage y About */
 .landing-page-separator {
-  height: 5cm; /* Altura de separación */
+  height: 1.5cm; /* Altura de separación */
   width: 100%; /* Asegura que el separador ocupe todo el ancho */
   background-color: #ffffff; /* Blanco, igual que el fondo */
   border: none; /* Sin borde */

@@ -1,56 +1,74 @@
-/* Header Styles */
+/* Estilos del Header */
 .header {
-  position: fixed; /* Hace que el header sea fijo */
+  position: fixed; /* Fija el header en la parte superior */
   top: 0;
   left: 0;
   width: 100%;
   background-color: #ffffff; /* Blanco */
   border-bottom: 1px solid #e0e0e0; /* Línea inferior para separación */
   z-index: 1000; /* Asegura que el header esté sobre otros elementos */
-  padding: 10px 0; /* Ajusta el padding según sea necesario */
+  padding: 15px 0; /* Ajusta el padding según sea necesario */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más prominente para un efecto flotante */
+  transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
 }
 
-/* Ajusta el contenedor del header */
+/* Contenedor del Header */
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px; /* Espaciado lateral */
+  padding: 0 30px; /* Espaciado lateral aumentado */
 }
 
-/* Estilos del logo */
+/* Estilos del Logo */
 .header-logo {
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 2em; /* Tamaño del logo incrementado */
+  font-weight: 700; /* Peso de fuente más fuerte */
   color: #2c3e50; /* Gris oscuro */
+  text-transform: uppercase; /* Transforma el texto a mayúsculas para un efecto más fuerte */
+  letter-spacing: 1.5px; /* Espaciado entre letras mejorado */
+  transition: color 0.3s ease; /* Transición suave para el color */
 }
 
-/* Estilos del menú de navegación */
+/* Hover en el Logo */
+.header-logo:hover {
+  color: #f39c12; /* Amarillo mostaza al pasar el cursor */
+}
+
+/* Menú de Navegación */
 .header-nav {
   display: flex;
   gap: 20px;
 }
 
-/* Estilos de los enlaces del menú */
-.header-nav-item {
+/* Enlaces del Menú */
+.header-nav a {
   text-decoration: none;
   color: #2c3e50; /* Gris oscuro */
   font-size: 1em;
-  transition: color 0.3s ease;
+  font-weight: 500; /* Peso de fuente medio */
+  padding: 10px 15px; /* Espaciado interno aumentado */
+  border-radius: 6px; /* Bordes redondeados para un efecto más suave */
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
 }
 
-/* Hover para enlaces del menú */
-.header-nav-item:hover {
-  color: #f39c12; /* Amarillo mostaza */
+/* Hover y Focus en los Enlaces del Menú */
+.header-nav a:hover,
+.header-nav a:focus {
+  color: #ffffff; /* Blanco */
+  background-color: #f39c12; /* Amarillo mostaza */
+  outline: none; /* Elimina el contorno de enfoque por defecto */
+  transform: translateY(-2px); /* Ligera elevación al pasar el cursor */
 }
 
-/* Estilos del dropdown (si lo necesitas) */
+/* Estilos del Dropdown */
 .header-dropdown {
   position: relative;
 }
 
+/* Contenido del Dropdown */
 .header-dropdown-content {
   display: none;
   position: absolute;
@@ -60,20 +78,30 @@
   top: 100%;
   left: 0;
   z-index: 1000;
+  min-width: 200px; /* Ancho mínimo para el dropdown */
+  border-radius: 6px; /* Bordes redondeados */
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Transición suave para la visibilidad */
 }
 
-.header-dropdown:hover .header-dropdown-content {
+/* Mostrar Dropdown al Hover o Focus */
+.header-dropdown:hover .header-dropdown-content,
+.header-dropdown:focus-within .header-dropdown-content {
   display: block;
+  opacity: 1;
 }
 
+/* Enlaces dentro del Dropdown */
 .header-dropdown-content a {
   display: block;
-  padding: 10px;
+  padding: 12px 15px;
   text-decoration: none;
   color: #2c3e50; /* Gris oscuro */
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Hover en los Enlaces del Dropdown */
 .header-dropdown-content a:hover {
   background-color: #f5f5f5; /* Color de fondo para hover */
+  color: #f39c12; /* Amarillo mostaza al pasar el cursor */
 }

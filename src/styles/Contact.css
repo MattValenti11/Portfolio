@@ -1,82 +1,89 @@
-/* Contact.css */
+/* Estilos para el contenedor del formulario */
+.contact-container {
+  width: 100%; /* Ancho completo del contenedor padre */
+  max-width: 800px; /* Ancho máximo del contenedor reducido */
+  margin: 0 auto; /* Centrar el contenedor */
+  padding: 30px;
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+  margin-top: 1.5cm; /* Espacio de 1.5 cm encima de la sección de Contact */
+}
 
-/* Aumenta el margen superior para crear separación desde el header */
-#contact {
-    margin-top: 1cm; /* Espacio de 1 cm entre el header y la sección Contact */
-    display: flex;
-    justify-content: center;
-  }
-  
-  .contact-container {
-    background-color: #ffffff; /* Blanco */
-    padding: 40px;
-    max-width: 1200px; /* Mayor ancho para el contenedor */
-    width: 100%; /* Asegura que use el 100% del ancho disponible */
-    margin: 0 auto;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-inner {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .contact-title {
-    font-size: 2.4rem;
-    color: #2C3E50; /* Gris oscuro */
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .contact-form-group {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .contact-label {
-    font-size: 1.1rem;
-    color: #2C3E50; /* Gris oscuro */
-    margin-bottom: 8px;
-  }
-  
-  .contact-input, .contact-textarea {
-    font-size: 1rem;
-    padding: 15px;
-    border: 1px solid #BDC3C7; /* Gris claro */
-    border-radius: 8px;
-    background-color: #ECF0F1; /* Gris claro */
-    color: #2C3E50; /* Gris oscuro */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-textarea {
-    resize: vertical;
-    min-height: 150px;
-  }
-  
-  .contact-button {
-    padding: 12px 25px;
-    background-color: #F39C12; /* Amarillo mostaza */
-    color: #FFFFFF; /* Blanco */
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    align-self: center;
-  }
-  
-  .contact-button:hover {
-    background-color: #e67e22; /* Naranja más oscuro como alternativa para el hover */
-    transform: translateY(-3px); /* Efecto de elevación */
-  }
-  
+/* Estilos para el título del formulario */
+.contact-container h2 {
+  margin: 0; /* Eliminar margen por defecto */
+  padding-bottom: 20px; /* Espacio debajo del título */
+  font-size: 24px;
+  font-weight: bold;
+  color: #2C3E50; /* Gris oscuro */
+  text-align: center; /* Centrar el título */
+}
+
+/* Estilos para el texto introductorio */
+.intro-text {
+  color: #95A5A6; /* Gris medio */
+  font-size: 1.1em; /* Tamaño de fuente ligeramente mayor */
+  text-align: center; /* Centrar el texto */
+  margin-bottom: 20px; /* Espacio debajo del texto */
+}
+
+/* Estilos para las etiquetas del formulario */
+.contact-container label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #2C3E50; /* Gris oscuro */
+}
+
+/* Estilos para los campos de entrada */
+.contact-container input,
+.contact-container textarea {
+  width: 100%; /* Ajustar al 100% del ancho del contenedor */
+  padding: 12px;
+  border: 1px solid #ECF0F1; /* Gris claro */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+  margin-bottom: 20px; /* Espacio entre los campos y el botón */
+  transition: border-color 0.3s ease; /* Transición suave para el borde */
+}
+
+/* Estilos para el campo de texto */
+.contact-container textarea {
+  height: 150px; /* Altura fija para el área de texto */
+  resize: vertical; /* Ajuste vertical del área de texto */
+}
+
+/* Estilos para el botón de envío */
+.contact-container button {
+  width: 100%; /* Ancho completo del contenedor */
+  padding: 15px;
+  background-color: #F39C12; /* Amarillo mostaza */
+  color: #ffffff; /* Color de texto blanco */
+  border: none;
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 18px; /* Tamaño de fuente */
+  cursor: pointer; /* Cursor de puntero */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.contact-container button:hover {
+  background-color: #e68a1c; /* Amarillo mostaza más oscuro al pasar el cursor */
+  transform: translateY(-2px); /* Ligera elevación al pasar el cursor */
+}
+
+.contact-container button:active {
+  background-color: #d48f1e; /* Amarillo mostaza más oscuro al hacer clic */
+  transform: translateY(0); /* Vuelve a la posición original al hacer clic */
+}
+
+/* Estilos para el mensaje de estado */
+.status-message {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center; /* Centrar el mensaje */
+  font-size: 16px;
+  color: #2C3E50; /* Gris oscuro */
+}

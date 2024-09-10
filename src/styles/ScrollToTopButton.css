@@ -1,0 +1,34 @@
+.scroll-to-top-button {
+    position: fixed; /* Fija el botón en la esquina inferior derecha */
+    bottom: 20px; /* Espacio desde el borde inferior */
+    right: 20px; /* Espacio desde el borde derecho */
+    background-color: #f39c12; /* Amarillo mostaza */
+    color: #ffffff; /* Blanco */
+    border: none;
+    border-radius: 50%; /* Botón circular */
+    width: 50px; /* Tamaño del botón */
+    height: 50px; /* Tamaño del botón */
+    font-size: 24px; /* Tamaño del icono */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0; /* Inicialmente oculto */
+    visibility: hidden; /* Inicialmente oculto */
+    z-index: 1000; /* Asegura que el botón esté sobre otros elementos */
+  }
+  
+  /* Efecto de hover */
+  .scroll-to-top-button:hover {
+    background-color: #e67e22; /* Naranja más oscuro */
+    transform: scale(1.1); /* Aumento de tamaño al pasar el cursor */
+  }
+  
+  /* Efecto cuando el botón es visible */
+  .scroll-to-top-button.is-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
