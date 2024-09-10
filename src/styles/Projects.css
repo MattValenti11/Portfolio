@@ -1,40 +1,77 @@
-.projects-container {
+/* General container styles */
+#projects {
   display: flex;
-  height: 100vh; /* Ocupa toda la altura de la ventana del navegador */
-  margin-bottom: 1.5cm; /* Espacio de 1.5 cm debajo de la sección de Projects */
+  flex-direction: column;
+  gap: 2rem; /* Espacio entre proyectos */
+  padding: 2rem;
 }
 
-.projects-image-container {
+/* Project container styles */
+.project-container {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Estilos específicos para proyectos con imagen a la izquierda */
+.project-container.left {
+  flex-direction: row; /* Imagen a la izquierda y texto a la derecha */
+}
+
+/* Estilos específicos para proyectos con imagen a la derecha */
+.project-container.right {
+  flex-direction: row-reverse; /* Imagen a la derecha y texto a la izquierda */
+}
+
+.project-image-container {
   flex: 1;
   display: flex;
-  align-items: center; /* Centra verticalmente la imagen dentro del contenedor */
-  justify-content: center; /* Centra horizontalmente la imagen dentro del contenedor */
+  justify-content: center; /* Centra la imagen horizontalmente */
+  padding: 20px;
 }
 
-.projects-image {
-  max-width: 100%; /* Limita el ancho máximo de la imagen */
-  max-height: 100%; /* Limita la altura máxima de la imagen */
+.project-image {
+  max-width: 100%;
+  max-height: 60vh; /* Limita la altura máxima de la imagen */
   object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+  border-radius: 8px; /* Bordes redondeados para la imagen */
 }
 
-.projects-text-container {
+.project-text-container {
   flex: 1;
-  padding: 40px; /* Agrega más espacio alrededor del texto */
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centra el contenido verticalmente */
-  background-color: #f4f4f4; /* Agrega un color de fondo suave para que el texto resalte */
-  border-left: 1px solid #ddd; /* Agrega una línea divisoria entre la imagen y el texto */
+  background-color: #f4f4f4; /* Fondo gris claro para resaltar el texto */
+  border-radius: 8px; /* Bordes redondeados para el contenedor de texto */
 }
 
-.projects-title {
-  font-size: 2.5rem; /* Aumenta el tamaño del título */
-  margin-bottom: 20px; /* Aumenta el margen inferior */
-  color: #333; /* Cambia el color del título */
+.project-title {
+  font-size: 2rem; /* Tamaño del título */
+  margin-bottom: 15px; /* Espacio debajo del título */
+  color: #2C3E50; /* Gris oscuro */
 }
 
-.projects-description {
-  font-size: 1.2rem; /* Aumenta el tamaño del texto de la descripción */
-  line-height: 1.6; /* Aumenta el espaciado entre líneas */
-  color: #555; /* Cambia el color del texto de la descripción */
+.project-description {
+  font-size: 1rem; /* Tamaño del texto de la descripción */
+  line-height: 1.5; /* Espaciado entre líneas */
+  color: #95A5A6; /* Color del texto de la descripción */
+  text-align: justify; /* Alinea el texto de manera justificada */
+  margin-bottom: 20px; /* Espacio debajo del texto */
+}
+
+.project-button {
+  padding: 10px 20px; /* Espaciado interno del botón */
+  font-size: 1rem; /* Tamaño del texto del botón */
+  color: #FFFFFF; /* Color del texto del botón */
+  background-color: #F39C12; /* Color de fondo del botón */
+  border: none;
+  border-radius: 5px; /* Bordes redondeados para el botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.project-button:hover {
+  background-color: #e67e22; /* Color de fondo del botón al pasar el ratón */
 }
